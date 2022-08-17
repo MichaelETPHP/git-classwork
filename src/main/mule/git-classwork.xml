@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="git-classworkFlow" doc:id="a91ab22b-745d-4444-8bbc-ca0092db3941" >
 		<http:listener doc:name="Listener" doc:id="a4275e3e-b7e6-472b-9600-a1d489d20fee" config-ref="HTTP_Listener_config" path="/git"/>
 		<logger level="INFO" doc:name="Logger" doc:id="d4c584ee-c534-4835-abd7-4409f2ad48a3" message="Hello its GIT"/>
+		<set-payload value='#["Hello its Payload!"]' doc:name="Set Payload" doc:id="2209c683-f91d-4cb6-ba04-2bd472bfe7e4" />
 	</flow>
 </mule>
